@@ -209,12 +209,11 @@ Action | Format | Example(s)
 
 <div style="page-break-after: always;"></div>
 
-***
 ### Managing Your Consultations
 Listed below are the commands for managing your consultations.
-Consultation events listed in the Consultation List are sorted in chronological order, earliest 
-consultation at the top, and latest consultation at the bottom. All consultations, existing and 
-to-be-added, events cannot overlap.
+Consultation events listed in the Consultation List are sorted in chronological order with the earliest 
+consultation at the top and the latest consultation at the bottom. All consultation events, existing or 
+to-be-added, cannot overlap.
 
 Listed is a description of the various fields of a Consultation Event:
 * NAME: Name of student involved in the consultation
@@ -306,6 +305,8 @@ Displays all upcoming consultation events for the current day in the Consultatio
 
 Format: `upcoming_events`
 
+<div style="page-break-after: always;"></div>
+
 ### 5.7 Clearing all Consultation Events : `clear`
 
 Clears all consultation events from DukePro(f).
@@ -315,8 +316,6 @@ careful when using this command!
 </div>
 
 Format: `clear`
-
-<div style="page-break-after: always;"></div>
 
 ### 5.8 Finding a Consultation Event : `find`
 Finds all consultation events whose names contain any of the specified keywords and displays them 
@@ -342,9 +341,12 @@ Example(s):
   Finds all consultation events that have students with the name `Jacob` (or any case-insensitive variant) 
   and displays them in the Consultation List.
 
+<div style="page-break-after: always;"></div>
+
 ### 5.9 Filtering Consultation Events By Tags : `filter_tag`
 Finds all consultation events whose tags contain any of the specified tag names (case-insensitive) and displays them as 
 an indexed list in the Consultation List.
+
 Format: `filter_tag TAG_NAME [MORE_TAG_NAMES]...`
 
 <div markdown="span" class="alert alert-danger">:warning: **WARNING**: The tag names will not register unless 
@@ -357,7 +359,7 @@ cannot return a consultation event tagged `URGENT`
 Example(s):
 * `filter_tag URGENT`<br>
   Finds all consultation events that contain the tag `URGENT` and displays them in the Consultation List.
-
+  
 <div style="page-break-after: always;"></div>
 
 ### 5.10 Listing all Free Time Slots : `list_free`
@@ -366,6 +368,10 @@ Result Display.
 
 Format: `list_free`
 
+Here's an example of what your screen should look like after entering the `list_free` command:
+
+<img src="images/list_free.png" width="600px">
+
 <div markdown="block" class="alert alert-info"> :information_source: 
 **Note:** An empty schedule i.e. with 0 events and 0 blocked slots in the schedule, will not have any free 
 slots displayed.
@@ -373,11 +379,16 @@ slots displayed.
 
 <br>
 
+<div style="page-break-after: always;"></div>
 
-***
+
 ### Managing Your Blocked Time Slots
 Listed below are the commands for managing your blocked time slots.
-Blocked time slots ensure that you will not be able to add consultation events during those time slots.
+Blocked time slots ensure that you will not be able to add consultation events during that period.
+
+Listed is a description of the various fields of a Blocked Time Slot:
+* DATE: Date the blocked time slot occurs
+* TIMESLOT: Start and end time of the blocked time slot
 
 ### 5.11 Adding a Blocked Time Slot : `block`
 Adds a blocked time slot to Dukepro(f).
@@ -408,10 +419,13 @@ Lists all blocked time slots in the Result Display.
 
 Format: `list_blocked`
 
+Here's an example of what your screen should look like after entering the `list_blocked` command:
+
+<img src="images/list_blocked.png" width="600px">
+
 <br>
 
 
-***
 ### Help Commands
 Listed below are the commands you can use to guide you in case you're stuck.
 
